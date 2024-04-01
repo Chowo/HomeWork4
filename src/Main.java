@@ -10,7 +10,7 @@ public class Main {
 
         //Task 02
         int outsideTemperature = 18;
-        if (outsideTemperature <= 5){
+        if (outsideTemperature <= 5) {
             System.out.println("На улице " + outsideTemperature + " градусов, нужно надеть шапку");
         } else {
             System.out.println("На улице " + outsideTemperature + " градусов, можно идти без шапки");
@@ -26,22 +26,22 @@ public class Main {
 
         //Task 04
         int entranceAge = 16;
-        if (entranceAge >= 2 && entranceAge <= 6 ){
+        if (entranceAge >= 2 && entranceAge <= 6) {
             System.out.println("Если возраст человека равен " + entranceAge + ", то ему нужно ходить в детский сад");
-        } if (entranceAge >= 7 && entranceAge <= 17) {
+        } else if (entranceAge >= 7 && entranceAge <= 17) {
             System.out.println("Если возраст человека равен " + entranceAge + ", то ему нужно ходить в школу");
-        } if (entranceAge >= 18 && entranceAge <= 24) {
+        } else if (entranceAge >= 18 && entranceAge <= 24) {
             System.out.println("Если возраст человека равен " + entranceAge + ", то ему нужно ходить в университет");
-        } if (entranceAge > 24) {
+        } else if (entranceAge > 24) {
             System.out.println("Если возраст человека равен " + entranceAge + ", то ему пора ходить на работу");
         }
 
         //Task 05
-        int  ageRestrictionForAmusementPark = 11;
+        int ageRestrictionForAmusementPark = 11;
         if (ageRestrictionForAmusementPark < 5) {
             System.out.println("Если возраст ребенка равен " + ageRestrictionForAmusementPark + ", то он не может кататься на аттракционе");
-        } if (ageRestrictionForAmusementPark >= 5 && ageRestrictionForAmusementPark < 14) {
-            System.out.println("Если возраст ребенка равен " + ageRestrictionForAmusementPark + ", то он может катать на аттракционе только в сопровождении взрослого. Если взрослого нет, то кататья нельзя");
+        } else if (ageRestrictionForAmusementPark >= 5 && ageRestrictionForAmusementPark < 14) {
+            System.out.println("Если возраст ребенка равен " + ageRestrictionForAmusementPark + ", то он может кататься на аттракционе только в сопровождении взрослого. Если взрослого нет, то кататья нельзя");
         } else {
             System.out.println("Если возраст ребенка равен " + ageRestrictionForAmusementPark + ", то он может кататься на аттракционе без сопровождения взрослого");
         }
@@ -49,9 +49,9 @@ public class Main {
         //Task 06
         int carCapacity = 102;
         int entranceNumber = 99;
-        if (carCapacity - entranceNumber >= 62) {
+        if (carCapacity - entranceNumber >= 42) {
             System.out.println("В вагоне есть свободные сидячие и стоячие места");
-        } if (carCapacity - entranceNumber < 0) {
+        } else if (carCapacity - entranceNumber < 0) {
             System.out.println("Вагон забит, мест не осталось");
         } else System.out.println("В вагоне есть сводобные стоячие места");
 
@@ -61,8 +61,10 @@ public class Main {
         int three = 12;
         if (one > two && one > three) {
             System.out.println("Число one большее и равно " + one);
-        } if (two > one && two > three){
+        } else if (two > one && two > three) {
             System.out.println("Число two большее и равно " + two);
-        } else System.out.println("Число three большее и равно " + three);
+        } else if (three > one && three > two) {
+            System.out.println("Число three большее и равно " + three);
+        }
     }
 }
