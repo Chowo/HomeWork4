@@ -49,6 +49,7 @@ public class Main {
         //Task 06
         int carCapacity = 102;
         int entranceNumber = 99;
+        //так как сравниваю разницу то пока разница больше или равно 42 значит есть сидячие мест, то есть пока entranceNumber не больше 60
         if (carCapacity - entranceNumber >= 42) {
             System.out.println("В вагоне есть свободные сидячие и стоячие места");
         } else if (carCapacity - entranceNumber < 0) {
